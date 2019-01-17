@@ -4,4 +4,4 @@
 ## Mail : 6014421007@rbru.ac.th
 
 [Web Site]
-(https://rbru.ac.th/6014421007)
+(https://stu2.rbru.ac.th/S6014421007)

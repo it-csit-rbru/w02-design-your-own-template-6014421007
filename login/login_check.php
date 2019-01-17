@@ -67,7 +67,7 @@ if(isset($_POST['email'])){
                     $login_status->email = $login_row['email'];
                     $login_status->name = $login_row['firstname'];
                     $_SESSION['login'] = json_encode($login_status);
-                    header('Location: http://localhost/php-project/main.php');
+                    header('Location: ../main.php');
                     exit();
                 }else{
 
@@ -77,7 +77,7 @@ if(isset($_POST['email'])){
                      */
 
                     $smg = "Login ล้มเหลว!";
-                    header('Location: http://localhost/php-project/login/');
+                    header('Location: index.html');
                     exit();
                 }
             }else{

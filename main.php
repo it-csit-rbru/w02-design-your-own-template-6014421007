@@ -40,7 +40,7 @@ session_start();
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?= $login->name; ?></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">โปรไฟล์</a>
                             <a class="dropdown-item" href="login/logout_check.php">ออกจากระบบ</a>
                         </div>
                     </li>

@@ -1,3 +1,4 @@
+<!-- include header -->
 <?php include 'header.php';?>
       <section class="mt-5">
           <div class="container mt-5">
@@ -8,4 +9,5 @@
               </div>
           </div>
       </section>
+<!-- include footer -->
 <?php include 'footer.php';?>

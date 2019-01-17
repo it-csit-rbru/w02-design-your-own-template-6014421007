@@ -1,8 +1,8 @@
 # w02-design-your-own-template-Nantawat
+## [Web Site]: http://stu2.rbru.ac.th/~s6014421007
 ID : 6014421007 <br>
 Name : Nantawat Nakkham <br>
 Mail : 6014421007@rbru.ac.th <br>
-## [Web Site]: http://stu2.rbru.ac.th/~s6014421007
 
 ### ภาษาที่ใช้ในการพัฒนา
 - HTML [ อ้างอิง : https://www.w3schools.com/html ]

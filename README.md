@@ -3,8 +3,14 @@
 > ID : 6014421007 <br>
 > Name : Nantawat Nakkham <br>
 > Mail : 6014421007@rbru.ac.th <br>
+## ระบบขายเกมออนไลน์ steam online
+> **ระบบขายเกมออนไลน์ Steam Online**
+> - ระบบสมัครสมาชิก
+> - ระบบ Login
+> - ชำระเงินผ่าน PayPal Check Out 
 
-## ภาษาที่ใช้ในการพัฒนา
+
+> **ภาษาที่ใช้ในการพัฒนา**
 > - HTML [ อ้างอิง ] : https://www.w3schools.com/html 
 > - CSS [ อ้างอิง ] : https://www.w3schools.com/css 
 > - JAVASCRIPT [ อ้างอิง ] : https://www.w3schools.com/js 

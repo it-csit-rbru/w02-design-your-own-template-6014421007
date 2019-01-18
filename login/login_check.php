@@ -25,7 +25,10 @@ if(isset($_POST['email'])){
 
         /**
          * นำ $email กับ $password มาเข้า 
-         * function : > mysqli_real_escape_string > strip_tags 
+         * [ function ] 
+         * 1.trim ตัดช่องว่างในข้อความที่ส่งมา
+         * 2.mysqli_real_escape_string ป้องกัน sql injection
+         * 3.strip_tags ตัด html ออกจากข้อความ
          */
 
         $email = strip_tags(mysqli_real_escape_string($connect, trim($email)));

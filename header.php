@@ -21,7 +21,7 @@ session_start();
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-info">
         <div class="container">
             <a class="navbar-brand" href="main.php">Navbar Shop</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -42,6 +42,7 @@ session_start();
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?= $login->name; ?></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">โปรไฟล์</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="login/logout_check.php">ออกจากระบบ</a>
                         </div>
                     </li>

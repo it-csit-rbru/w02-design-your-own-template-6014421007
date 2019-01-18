@@ -1,6 +1,8 @@
 
-        <footer>
-          
+        <footer class="mt-5">
+          <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Footer</a>
+          </nav>
         </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -4,7 +4,7 @@
 > Name : Nantawat Nakkham <br>
 > Mail : 6014421007@rbru.ac.th <br>
 ## ระบบตลาดขายผลไม้ออนไลน์
-![alt text](https://drive.google.com/file/d/1JQZTNkhVVjJgFU8RmRsniMFDSxumFDsV/view?usp=sharing)
+![alt text](https://www.picz.in.th/image/TdtYFy)
 > **ระบบตลาดขายผลไม้ออนไลน์**
 > - ระบบสมัครสมาชิก
 > - ระบบ Login

@@ -19,11 +19,17 @@
 
 ![alt text](https://sv1.picz.in.th/images/2019/01/22/Tdtx5P.png)
 > **ภาษาที่ใช้ในการพัฒนา**
-> - HTML [ ข้อมูล ] : https://www.w3schools.com/html 
-> - CSS [ ข้อมูล ] : https://www.w3schools.com/css 
-> - JAVASCRIPT [ ข้อมูล ] : https://www.w3schools.com/js 
-> - PHP [ ข้อมูล ] : https://www.w3schools.com/php 
-> - SQL [ ข้อมูล ] : https://www.w3schools.com/sql 
-> - Bootstrap 4 Framework [ ข้อมูล ] : https://getbootstrap.com 
+> - HTML 
+>[ ข้อมูล ] : https://www.w3schools.com/html 
+> - CSS 
+>[ ข้อมูล ] : https://www.w3schools.com/css 
+> - JAVASCRIPT 
+>[ ข้อมูล ] : https://www.w3schools.com/js 
+> - PHP 
+>[ ข้อมูล ] : https://www.w3schools.com/php 
+> - SQL 
+>[ ข้อมูล ] : https://www.w3schools.com/sql 
+> - Bootstrap 4 Framework 
+>[ ข้อมูล ] : https://getbootstrap.com 
 
 

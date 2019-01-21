@@ -11,11 +11,11 @@
 
 
 > **ภาษาที่ใช้ในการพัฒนา**
-> - HTML [ อ้างอิง ] : https://www.w3schools.com/html 
-> - CSS [ อ้างอิง ] : https://www.w3schools.com/css 
-> - JAVASCRIPT [ อ้างอิง ] : https://www.w3schools.com/js 
-> - PHP [ อ้างอิง ] : https://www.w3schools.com/php 
-> - SQL [ อ้างอิง ] : https://www.w3schools.com/sql 
-> - Bootstrap 4 Framework [ อ้างอิง ] : https://getbootstrap.com 
+> - HTML [ ข้อมูล ] : https://www.w3schools.com/html 
+> - CSS [ ข้อมูล ] : https://www.w3schools.com/css 
+> - JAVASCRIPT [ ข้อมูล ] : https://www.w3schools.com/js 
+> - PHP [ ข้อมูล ] : https://www.w3schools.com/php 
+> - SQL [ ข้อมูล ] : https://www.w3schools.com/sql 
+> - Bootstrap 4 Framework [ ข้อมูล ] : https://getbootstrap.com 
 
 

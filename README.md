@@ -26,11 +26,16 @@
 > - SQL
 > - Bootstrap 4 Framework
 
-### Dashbaord
-![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5Cjg.png)
-### add Product
-![alt text](https://sv1.picz.in.th/images/2019/01/22/Td529n.png)
-### list
-![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5uvW.png)
-### Profile
-![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5nN2.png)
+|### Dashbaord|### add Product|
+|----------|:---------:|
+|![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5Cjg.png)|![alt text](https://sv1.picz.in.th/images/2019/01/22/Td529n.png)|
+
+|### list|### Profile|
+|----------|:---------:|
+|![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5uvW.png)|![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5nN2.png)|
+
+
+
+
+
+

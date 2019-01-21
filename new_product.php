@@ -13,7 +13,7 @@
                                 <div class="card-body">
                                     <form action="" method="post">
                                         <div class="row">
-                                            <div class="col-lg-9">
+                                            <div class="col-lg-9 border-right">
                                                 <div class="form-row">
                                                     <div class="col-lg-12">
                                                         <label for="">ชื่อ</label>
@@ -29,10 +29,7 @@
                                                 <div class="form-row mt-3">
                                                     <div class="col-lg-12">
                                                         <label for="">Tag</label>
-                                                        <select multiple data-role="tagsinput" class="form-control form-control-sm">
-                                                            <option value="Amsterdam">Amsterdam</option>
-                                                            <option value="Washington">Washington</option>
-                                                            <option value="Sydney">Sydney</option>
+                                                            <select multiple data-role="tagsinput" class="form-control form-control-sm">
                                                         </select>
                                                     </div>
                                                 </div>
@@ -47,8 +44,18 @@
                                                 <div class="form-row mt-2">
                                                     <div class="col-lg-12">
                                                         <label for="">หมวดหมู่</label>
-                                                        <select class="form-control form-control-sm select2">
-                                                            <option>Small select</option>
+                                                        <select class="form-control form-control-lg select2">
+                                                            <?php 
+                                                            require 'includes/connect_db.php';
+                                                            $select_cate_pro = $connect->query("SELECT id,name FROM category");
+                                                            if($select_cate_pro->num_rows > 0){
+                                                                while($category_pro = $select_cate_pro->fetch_object()){
+                                                            ?>
+                                                            <option value="<?=$category_pro->id?>"><?="(".$category_pro->id.") ".$category_pro->name;?></option>
+                                                            <?php
+                                                                }
+                                                            }
+                                                            ?>
                                                         </select>
                                                     </div>
                                                 </div>

@@ -13,13 +13,13 @@
                                 <div class="card-body">
                                     
                                     <div class="row">
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-4 border-right">
                                             <img src="<?= $profile->image;?>" class="img-fluid rounded-circle" alt="">
                                             <hr>
                                             <input type="file" name="" id="">
                                         </div>
                                         <div class="col-lg-8">
-                                            <p class="h1">คุณ : <?= $login->fname." ".$login->lname?> </p>
+                                            <p class="h2">คุณ : <?= $login->fname." ".$login->lname?> </p>
                                             <hr>
                                             <div class="row">
                                                 <div class="col-lg-12">

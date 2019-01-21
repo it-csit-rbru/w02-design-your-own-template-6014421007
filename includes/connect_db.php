@@ -8,7 +8,7 @@ $configs = [
     "db_name" => "php-pro"
 ];
 // ทำการ connect database
-$connect = mysqli_connect( 
+$connect = new mysqli( 
     $configs["host"], 
     $configs["username"], 
     $configs["password"],

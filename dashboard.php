@@ -20,9 +20,10 @@
                                             <p class="h2 float-right">
                                                 <?php
                                                     require 'includes/connect_db.php';
-                                                    $select_row = mysqli_query($connect,"SELECT * FROM product");
+                                                    $select_row = mysqli_query($connect,"SELECT * FROM product WHERE users_id ='$login->id'");
                                                     $row_product = mysqli_num_rows($select_row);
                                                     print_r($row_product);
+                                                    $connect->close();
                                                 ?>
                                             </p>
                                         </div>

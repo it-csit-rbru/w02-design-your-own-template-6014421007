@@ -20,3 +20,6 @@ body{
 .bg-login{
     background-image: url("../images/login_show003.jpg") !important;
 }
+.bg-signup{
+    background-image: url("../images/login_show002.jpg") !important;
+}

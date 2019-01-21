@@ -3,12 +3,43 @@
       <section class="mt-5">
           <div class="container">
               <div class="row">
-                  <div class="col-md-12 mt-5">
-                    <div class="card shadow-sm">
+                  <div class="col-md-10 m-auto ">
+                    <div class="card shadow-sm bg-signup mt-5">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                     
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <form action="signup/signup.php" method="post" class="mt-5 mb-5 pt-5 pb-5">
+                                                <div class="form-row">
+                                                    <div class="col-lg-12">
+                                                        <label for="email">Email</label>
+                                                        <input type="text" class="form-control" name="email" id="email" placeholder="example@mail.com" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-lg-6">
+                                                        <label for="fname">Firstname</label>
+                                                        <input type="text" class="form-control" name="fname" id="fname" placeholder="ชื่อ" required>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <label for="lname">Lastname</label>
+                                                        <input type="text" class="form-control" name="lname" id="lname" placeholder="นามสกุล" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-lg-12">
+                                                        <label for="password">password</label>
+                                                        <input type="text" class="form-control" name="password" id="password" placeholder="password" required>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-dark btn-lg btn-block mt-3">สมัครสมาชิก</button>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

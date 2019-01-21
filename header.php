@@ -3,6 +3,11 @@
     
     if(isset($_SESSION['login'])){
         $login = json_decode($_SESSION['login']);
+        require 'includes/connect_db.php';
+            $select_profile = $connect->query("SELECT * FROM users_profile WHERE user_id=$login->id");
+            if($select_profile->num_rows > 0){
+                $profile = $select_profile->fetch_object();
+            } 
     }
 ?>
 <!doctype html>
@@ -51,11 +56,15 @@
                 <ul class="navbar-nav ml-auto mr-5">
                     <?php if(isset($_SESSION['login'])){ ?>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?= $login->name; ?></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="<?= $profile->image;?>" class="img-fluid rounded-circle" width="23" alt="">
+                            <?= $login->name; ?>
+                        </a>
+                        <div class="dropdown-menu rounded-0" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="dashboard.php">Dashboard</a>
                             <a class="dropdown-item" href="profile.php">โปรไฟล์</a>
-                            
+                            <a class="dropdown-item" href="setting.php">ตั้งค่า</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="login/logout_check.php">ออกจากระบบ</a>
                         </div>

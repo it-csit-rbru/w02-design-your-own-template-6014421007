@@ -59,14 +59,14 @@
                         
                         <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="<?= $profile->image;?>" class="img-fluid rounded-circle" width="23" alt="">
-                            <?= $login->name; ?>
+                            <?= $login->fname; ?>
                         </a>
                         <div class="dropdown-menu rounded-0" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="dashboard.php">Dashboard</a>
-                            <a class="dropdown-item" href="profile.php">โปรไฟล์</a>
-                            <a class="dropdown-item" href="setting.php">ตั้งค่า</a>
+                            <a class="dropdown-item" href="dashboard.php"><i class="fas fa-chart-line"></i> Dashboard</a>
+                            <a class="dropdown-item" href="profile.php"><i class="far fa-user"></i> โปรไฟล์</a>
+                            <a class="dropdown-item" href="setting.php"><i class="fas fa-cogs"></i> ตั้งค่า</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="login/logout_check.php">ออกจากระบบ</a>
+                            <a class="dropdown-item" href="login/logout_check.php"><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</a>
                         </div>
                     </li>
                     <?php }else{?>

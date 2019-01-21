@@ -90,10 +90,10 @@
         <script type="text/javascript">
             $('.dropify').dropify({
                 messages: {
-                    'default': 'Drag and drop a file here or click',
+                    'default': 'Click เพื่ออัพโหลดรูป',
                     'replace': 'Drag and drop or click to replace',
-                    'remove': 'Remove',
-                    'error': 'Ooops, something wrong appended.'
+                    'remove': 'ลบรูป',
+                    'error': 'อัพโหลดรูปล้มเหลว'
                 },
                 error: {
                     'fileSize': 'The file size is too big (1M max).'

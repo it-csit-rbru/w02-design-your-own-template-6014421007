@@ -68,7 +68,8 @@ if(isset($_POST['email'])){
                     $smg = "Login สำเสร็จ!";
                     $login_status->id = $login_row['id'];
                     $login_status->email = $login_row['email'];
-                    $login_status->name = $login_row['firstname'];
+                    $login_status->fname = $login_row['firstname'];
+                    $login_status->lname = $login_row['lastname'];
                     $_SESSION['login'] = json_encode($login_status);
                     header('Location: ../main.php');
                     exit();

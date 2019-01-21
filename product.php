@@ -1,11 +1,8 @@
 <?php include 'header.php';?>
     <?php 
-        if(isset($_GET['id'])){
-            $product_id = $_GET['id'];
-            require 'includes/connect_db.php';
-            $select_product_query = $connect->query("SELECT * FROM product WHERE id='$product_id'");
-        }
-        
+        require 'includes/connect_db.php';
+        $product_id = $_GET['id'];
+        $select_product_query = mysqli_query($connect, "SELECT * FROM product WHERE id='$product_id'");
     ?>
       <section class="mt-5">
           <div class="container">
@@ -16,14 +13,14 @@
                             <div class="row">
                                 <?php
                                     if($select_product_query->num_rows > 0){
-                                        $product = $select_product_query->fetch_object();
+                                        while($product = $select_product_query->fetch_assoc()) {
                                 ?>
                                 <div class="col-lg-9">
                                     <h1><?=$product['name']?></h1>
                                     <hr>
                                     <div class="row mt-3">
                                         <div class="col-lg-8">
-                                            <img src="<?=$product->image;?>" class="img-fluid img-thumbnail" alt="">
+                                            <img src="<?=$product['image']?>" class="img-fluid img-thumbnail" alt="">
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="card">
@@ -33,15 +30,15 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td class="text-left">ชื่อ :</td>
-                                                                <td class=""><?=$product->name;?></td>
+                                                                <td class=""><?=$product['name']?></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="text-left">หมวดหมู่ :</td>
-                                                                <td class=""><?=$product->name;?></td>
+                                                                <td class=""><?=$product['name']?></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="text-left">ราคา :</td>
-                                                                <td class=""><?=$product->price;?> บาท</td>
+                                                                <td class=""><?=$product['price']?> บาท</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -84,7 +81,7 @@
                                     </div>
                                 </div>
                                 <?php
-                                    
+                                    }
                                 }
                                 ?>
                                 <div class="col-lg-3">

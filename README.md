@@ -27,10 +27,10 @@
 > - Bootstrap 4 Framework
 
 ### Dashbaord
-![alt text](https://www.picz.in.th/image/Td5Cjg)
+![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5Cjg.png)
 ### add Product
-![alt text](https://www.picz.in.th/image/Td529n)
+![alt text](https://sv1.picz.in.th/images/2019/01/22/Td529n.png)
 ### list
-![alt text](https://www.picz.in.th/image/Td5uvW)
+![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5uvW.png)
 ### Profile
-![alt text](https://www.picz.in.th/image/Td5nN2)
+![alt text](https://sv1.picz.in.th/images/2019/01/22/Td5nN2.png)

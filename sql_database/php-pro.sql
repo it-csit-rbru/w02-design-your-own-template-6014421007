@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 21, 2019 at 02:16 PM
+-- Generation Time: Jan 21, 2019 at 03:55 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -13,6 +13,19 @@ SET time_zone = "+00:00";
 --
 -- Database: `php-pro`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `category`
+--
+
+CREATE TABLE `category` (
+  `id` bigint(10) NOT NULL,
+  `user_id` bigint(10) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `image` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -27,7 +40,7 @@ CREATE TABLE `product` (
   `name` varchar(100) NOT NULL,
   `price` bigint(20) NOT NULL,
   `category_id` varchar(20) NOT NULL,
-  `data_time` datetime NOT NULL,
+  `data_time` date NOT NULL,
   `content` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -36,7 +49,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `image`, `users_id`, `name`, `price`, `category_id`, `data_time`, `content`) VALUES
-(1, 'images/upload/product.png', '1', 'test1', 1000, 'cat001', '2019-01-18 00:00:00', 'text text <br>\r\nภาษาไทย');
+(1, 'images/upload/product.png', '1', 'test1', 1000, 'cat001', '2019-01-18', 'text text <br>\r\nภาษาไทย');
 
 -- --------------------------------------------------------
 
@@ -94,6 +107,12 @@ INSERT INTO `users_profile` (`id`, `user_id`, `image`, `paypal`, `money`, `faceb
 --
 
 --
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -114,6 +133,12 @@ ALTER TABLE `users_profile`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `id` bigint(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `product`

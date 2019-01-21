@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:500');
 body{
+    font-family: 'Bai Jamjuree', sans-serif;
     background: #f2f2f2;
+}
+.list-group-flush a:hover{
+    color:#ffffff;
+    background: #5f5f5f;
+}
+.dropify-wrapper{
+    height: 120px ;
+}
+.bootstrap-tagsinput .tag{
+    padding: 1px 4px;
+    border-radius: 5px;
+    background: #000000;
+    /*border: 1px solid #000;*/
+    color:#ffffff;
+}
+.bg-login{
+    background-image: url("../images/login_show003.jpg") !important;
 }

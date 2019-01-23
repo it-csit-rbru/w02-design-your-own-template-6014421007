@@ -83,20 +83,21 @@
                                                         <?php 
                                                         //
                                                         require 'includes/connect_db.php';
-                                                        $select_product_query =  mysqli_query($connect, "SELECT * FROM product");
-                                                        if(mysqli_num_rows($select_product_query) > 0 ){
-                                                            while($product = $select_product_query->fetch_assoc()) {
+                                                        $select_product_query =  $connect->query("SELECT * FROM product");
+                                                        if($select_product_query->num_rows > 0 ){
+                                                            while($product = $select_product_query->fetch_object()){
                                                         ?>
                                                         <div class="col-md-4 mb-3">
-                                                            <div class="card rounded-0 shadow-sm">
-                                                                <img src="<?=$product['image']?>" class="img-fluid" alt="...">
-                                                                <div class="card-body text-center">
-                                                                    <p class="card-text h6">ราคา <?=$product['price']?> บาท</p>
+                                                            <a href="">
+                                                                <div class="card rounded-0 shadow-sm">
+                                                                    <img src="<?=$product->image?>" class="img-fluid" alt="...">
+                                                                    <p class="h6 mt-1 ml-2 mr-2"><?=$product->name;?></p>
+                                                                    <p class=""><?=$product->price?></p>
+                                                                    <div class="float-right">
+                                                                        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">แชร์</a></div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="card-footer">
-                                                                    <a class="btn btn-info btn-sm btn-block" href="product.php?id=<?=$product['id']?>" role="button"><i class="fas fa-cart-arrow-down"></i> สั่งซื้อ</a>
-                                                                </div>
-                                                            </div>
+                                                            </a>
                                                         </div>
                                                         <?php
                                                             }
